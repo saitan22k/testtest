@@ -1,0 +1,124 @@
+.about {
+    display: flex;
+    width: 100%;
+    padding-top: 54px;
+    padding-bottom: 59px;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+}
+
+.about__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__wrapper--text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__text--main {
+    font-family: $font;
+    font-size: 36px;
+    font-weight: 300;
+    color: $blue;
+}
+
+.about__text--other {
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+}
+
+.about__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.about__btn--small {
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: $blue;
+    text-align: center;
+    padding: 12px 27px;
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease-in;
+
+    &:hover{
+       background-color: #1998D5;
+    }
+}
+
+.about__btn--big {
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 700;
+    color: $blue;
+    background-color: #FFF;
+    text-align: center;
+    padding: 12px 27px;
+    border-radius: 5px;
+    border: 1px $blue solid;
+
+    transition: color 0.1s ease-in;
+
+    &:hover{
+       color: #1998D5;
+    }
+}
+
+.about__img{
+    display: flex;
+    height: 367px;
+}
+
+@media screen and (max-width: 900px) {   
+    .about__left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .about__wrapper--text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .about__text--main {
+        font-size: 28px;
+        font-weight: 400;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .about__text--other {
+        font-size: 16px;
+    }
+    
+    .about__btns {
+        margin: 0 auto;
+    }
+    
+    .about__img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {  
+    .about__btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+ }

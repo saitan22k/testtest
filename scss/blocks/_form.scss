@@ -1,0 +1,144 @@
+.form {
+    display: flex;
+    background-image: url(../img/form/1.png);
+    width: 100%;
+
+    padding-top: 61px;
+    padding-bottom: 61px;
+    background-size: cover;
+    justify-content: center;
+  }
+
+  .form__wrapper{
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .form-section {
+    background: rgba(0, 180, 230, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    width: 100%;
+    max-width: 568px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .interview-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .form-input,
+  textarea,
+  .input-with-icon input {
+    padding: 12px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .input-with-icon {
+    position: relative;
+    width: 100%;
+  }
+  
+  .input-with-icon input {
+    padding-right: 30px;
+  }
+  
+  .input-with-icon .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+  }
+  
+  .icon-success {
+    color: #4CAF50;
+  }
+  
+  .icon-error {
+    color: #f44336;
+  }
+  
+  .input-with-icon.valid input {
+    border-color: #4CAF50;
+  }
+  
+  .input-with-icon.invalid input {
+    border-color: #f44336;
+  }
+  
+  .form-group label {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #fff;
+  }
+  
+  .radio-options input[type="radio"] {
+    accent-color: #fff; 
+    background-color: #fff;
+  }
+  
+  .radio-options label {
+    color: #fff;
+    font-weight: normal;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .attach-btn {
+    background-color: #fff;
+    color: #66cc33;
+    border: 2px solid #66cc33;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-btn {
+    background-color: #a3d900;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  

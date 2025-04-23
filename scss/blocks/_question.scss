@@ -1,0 +1,130 @@
+.question {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(180deg, #d0f0d0, #d0f0f8);
+}
+
+.question__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 30px;
+}
+
+.question__left {
+    display: flex; 
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.question__title {
+    font-family: $font;
+    font-size: 26px;
+    font-weight: 700;
+    color: #14AFE8;
+    gap: 16px;
+}
+
+.interview-tips-section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.link {
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 400;
+    color: $blue;
+    border-bottom: 1px solid;
+}
+
+.interview-tips-intro {
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    padding-left: 10px;
+}
+
+.interview-tips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    list-style-type: circle; 
+    list-style-position: outside;
+}
+
+.interview-tip-item {
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+}
+
+.interview-extra-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.extra-link-item {
+    display: flex;
+    gap: 16px;
+}
+
+.extra-link {
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    border-bottom: 1px solid #adadad;
+}
+
+
+.interview-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1150px) {  
+    .question__right{
+        display: none;
+    }
+ }
+
+ 
+@media screen and (max-width: 552px) {  
+    .interview-section{
+        display: none;
+    }
+
+    .extra-link {
+        border-bottom: none;
+    }
+
+    .link{
+        border-bottom: none;
+    }
+
+    .interview-tips-section{
+        gap: 40px;
+    }
+
+    .question__wrapper{
+        padding-top: 20px;
+    }
+
+    .question__left{
+        gap: 30px;
+    }
+
+    .arrow{
+        width: 24px;
+        height: 24px;
+
+    }
+ }
